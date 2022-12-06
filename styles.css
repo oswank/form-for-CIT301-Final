@@ -1,0 +1,43 @@
+body{
+    font-family:Helvetica;
+    font-size:18px;
+    margin:0;
+    text-align:center;
+  }
+  
+  label {
+    display: block;
+    margin: 0.4rem 1;
+  }
+  
+  h1,p {
+    text-align:center;
+  }
+  
+  fieldset{
+    padding:1rem ;
+    border:none;
+  }
+  
+  legend{
+    margin: -15 1
+  }
+  
+  #comments{
+    margin: 0;
+    width: 333
+  }
+  
+  .round{
+    border-radius: 8px;
+    background:tan;
+  }
+  
+  #submit{
+      background-color:#d2e5f2;
+      font-size:14;
+      border-radius:3px;
+      margin:0 250 0 0;
+      padding: 2px .8em;
+  }
+  

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title> Cyber Defense Club Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Cyber Defense Club Registration</h1>
+    <p id="description"><strong>Please fill out this form with the required information.</strong></p>
+    <form id="survey-form" action="/submit-form">
+      <fieldset>
+        <label for="name" id="name-label">Enter Your First and Last Name: <input id="name" class="round" type="text" name="name" placeholder="First Name Last Name" required /></label>
+        <label for="email" id="email-label">Enter Your Email: <input id="email" class="round" type="email" name="email" placeholder="email@address.com" required /></label>       
+        <label for="year-of-graduation" id="number-label">Enter the year you graduate: <input id="number" class="round" type="number" name="number" min="2022" max="2050" placeholder="XXXX" /></label>
+        <label for="dropdown">How much experience do you have?
+          <select id="dropdown" class="round" name="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">None - Beginner</option>
+            <option value="2">Intermediate</option>
+            <option value="3">Advanced</option>
+            <option value="4">Expert</option>
+          </select>
+        </label>
+        
+      <fieldset>
+        <legend>Which meeting time(s) work best for you for every first and third Wednesday?</legend>
+        <label for="times">
+          <input type="checkbox" name="timecheck" value="6:30" />6:30 PM <br>
+          <input type="checkbox" name="timecheck" value="6:45" />6:45 PM <br>
+          <input class="checkboxes" type="checkbox" name="timecheck" value="7:00" />7:00 PM 
+        </label>   
+      </fieldset>        
+      <fieldset>
+        <legend>Would you like to sign up for our newsletter?</legend>
+        <label for="yes-news"><input id="yes-news" type="radio" name="newsletter" value="1" /> Yes</label>
+        <label for="no-news"><input id="no-news"  type="radio" name="newsletter" value="2" /> No</label>
+        <label for="comments">What would you like to see from the club? <br>
+          <textarea id="comments" class="round" name="comments" rows="3" cols="30" placeholder="I'd like..."></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="Submit" id="submit" />
+    </form>
+  </body>
+</html>
